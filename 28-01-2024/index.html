@@ -2,60 +2,272 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>
-        My first page
-    </title>
-    <meta name="descripiton" content="Subscribe to Karthikeyan J J">
-    <link rel="icon" href="../28-01-2024/resource/icon-html.png" type="image/png">
-    <link rel="stylesheet" href="../28-01-2024/main.css" type="text/css">
+    <meta name="author" content="Dave Gray">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+    <title>My First Web Page</title>
+    <link rel="icon" href="../28-01-2024/resource/html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
 </head>
+
 <body>
-    <h1>
-        Hello World
-    </h1>
+    <header>
+        <h1>My Goals for the Year</h1>
+
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <hr>
-    <p>
-        Mr. PC ER. Karthikeyan JJ
-    </p>
-    <h2>
-        <em>Chapter 3</em>
-    </h2>
-    <p>
-        <strong>Never Give</strong> <br>Up!
-    </p>
-    <h3>
-        Need to post video
-    </h3>
-    <p>
-        Whether you’re new to writing or looking to develop your skills, we work with writers and industry experts to commission digital resources for writers packed with useful advice, practical tips and short writing exercises. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Access them for free now.
-        
-    </p>
-    <dl>
-        <dt><a href="https://www.youtube.com/">Device</a></dt>
-        <dd>Monitoring</dd>
-        <dt>Youtube</dt>
-        <dd>Tom</dd>
-    </dl>
+    <main>
+        <article id="html">
+            <h2>I'm Ready to Learn HTML</h2>
+            <p>This is my first web page.</p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="../28-01-2024/resource/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300"
+                    height="300">
+                <figure>
+                    <figcaption>An Example of HTML5 code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
+            <section>
+                <h3>My Daily Schedule</h3>
+                <p>Let me tell you how:</p>
+                <ol>
+                    <li>...I learn more about web dev.</li>
+                    <li>...I plan out my schedule.</li>
+                    <li>...I use resources from <abbr title="Mozilla Developer Network">
+                            <a href="https://developer.mozilla.org/">MDN</a>
+                        </abbr>.</li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                        <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3
+                                hours</time> every morning.</p>
+                    </details>
+                </aside>
+                <br>
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td><time datetime="08:00">8am</time>-<time datetime="11:00">11am</time></td>
+                            <td>Write code</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td><time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time></td>
+                            <td>Lunch break</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td><time datetime="12:00">12pm</time>-<time datetime="18:00">8pm</time></td>
+                            <td>Study time</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Evening</th>
+                            <td rowspan="2">All other time</td>
+                            <td>Free time</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td>Sleep</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Eat, sleep and code everyday</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="vacation">
+            <h2>I Am Also Planning a Vacation</h2>
+            <p>I've been working hard and <em>really need a getaway</em>.</p>
+            <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
+
+            <section>
+                <h3>Places I'd Like to Visit</h3>
+                <ul>
+                    <li>
+                        <p>I've heard good things about the Caribbean.</p>
+                        <figure>
+                            <img src="../28-01-2024/resource/caribbean.jpg" alt="Caribbean Beach"
+                                title="I want to visit a Caribbean beach." width="400" height="225" loading="lazy">
+                            <figcaption>
+                                Caribbean Beach Getaway
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>I've heard good things about going here:</p>
+                        <address>
+                            Margaritaville Island Reserve Riviera Cancún<br>
+                            Bahia Petempich Puerto Morelos, Mexico<br>
+                            Colonia Morelos, México 77580
+                        </address>
+                        <figure>
+                            <img src=".//resource/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'Clock Somewhere!"
+                                width="400" height="267" loading="lazy">
+                            <figcaption>
+                                A Caribbean Vacation Image
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <!-- TODO: Add more places -->
+            <section>
+                <h3>Places I Want to Avoid</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I hear this is <strong>cold</strong>!</dd>
+
+                    <dt>South Pole</dt>
+                    <dd>This is also cold.</dd>
+
+                    <dt>Mountain Tops</dt>
+                    <dd>These are also cold.</dd>
+                </dl>
+            </section>
+        </article>
+        <hr>
+        <article id="contact">
+            <h2>Contact me:</h2>
+            <p>I would like to hear from you.</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstName">First name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Firstname" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="lastName">Last name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Lastname" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        &nbsp;<input type="password" name="password" id="password"  placeholder="password" required>
+                    </p>
+                    <p>
+                        <label for="phoneno">Phone No:</label>
+                        <input type="tel" name="phoneno" id="phoneno"  placeholder="phoneno" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    </p>
+                    <p>
+                        <label for="decade">Fav decade:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2020" value="1980" step="10">
+                    </p>
+                    <p>
+                        <label for="content">Fav content from karthikeyan:</label>
+                        <select name="content" id="content" multiple size="5">
+                            <optgroup label="Content">
+                                <option value="PC BUILD">PC BUILD</option>
+                                <option value="Contant creator" selected>Contant creator</option>
+                                <option value="Installer creator">Installer creator</option>
+                            </optgroup>
+                            <optgroup label="Money">
+                                <option value="Share market">Share market</option>
+                                <option value="Trading">Trading</option>
+                                <option value="Investment">Investment</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <!-- <p>
+                        <label for="content">Fav content from karthikeyan:</label>
+                        <input type="text" name="content" id="content" list="content-list">
+                        <datalist id="content-list">
+                            <option value="PC BUILD">
+                            <option value="Contant creator" selected>
+                            <option value="Installer creator">
+                            <option value="Share market">
+                            <option value="Trading">
+                            <option value="Investment">
+                        </datalist>
+                    </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>your fav food</legend>
+                    <p>
+                        <input type="radio" name="food" id="chicken" value="chicken">
+                        <label for="chicken">chicken</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="puli" value="puli">
+                        <label for="puli">puli</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="sambar" value="sambar">
+                        <label for="sambar">sambar</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>your fav pet</legend>
+                    <p>
+                        <input type="checkbox" name="pet" id="dog" value="dog">
+                        <label for="dog">dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="lion" value="lion">
+                        <label for="lion">lion</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="other-pet" value="other-pet">
+                        <label for="other-pet">Other Pet</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your message</label>
+                    <p>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+                <br>
+            </form>
+        </article>
+    </main>
     <hr>
-    <h2>
-        Chapter 3
-    </h2>
-    <p>
-        Complete our simple form to gain access to 13 free resource packs for writers at the early stages of their writing journey. Each pack contains advice, practical tips and writing exercises delivered by established writers such as Jenny Offill, Geoff Dyer, Eimear McBride, Sarah Perry, Okechukwu Nzelu, Michel Faber and more.
-    </p>
-    <h3>
-        Need to post video
-    </h3>
-    <address>
-        TamilName,
-        Chennai - 01
-    </address>
-    <!--To Do-->
-    <p>
-        Explore more writing resources, new writing and reading recommendations
-    </p>
-    <hr>
-    <p>I learn from <abbr title="Mozilla Developer Network">MDN</abbr> resources</p>
-    &lt;&copy;Karthikeyan&gt;
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="aboutme.html">Dave Gray</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
 </body>
 </html>
