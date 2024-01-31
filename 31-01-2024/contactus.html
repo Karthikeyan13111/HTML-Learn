@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../31-01-2024/main.css">
+</head>
+<body>
+    <header>
+        <h2>The Little Taco Shop Hours</h2>
+        <ul>
+            <li>
+                <a href="../31-01-2024/index.html">Home</a>
+            </li>
+        </ul>
+    </header>
+    <hr>
+    <main>
+        <article id="storehours">
+            <dl>
+                <dt>Sunday-Thursday</dt>
+                <dd>11am-9pm</dd>
+                <dt>Friday-Saturday</dt>
+                <dd>11am-11pm</dd>
+            </dl>
+        </article>
+        <article id="contact">
+            <h2>Contact me:</h2>
+            <p>I would like to hear from you.</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Send Us A Message</legend>
+                    <p>
+                        <label for="Name">Name:</label>
+                        <input type="text" name="Name" id="Name" placeholder="Name" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="Email">Email:</label>
+                        <input type="text" name="Email" id="Email" placeholder="Email" autocomplete="on" required>
+                    </p>
+                    <label for="message">Your message</label>
+                    <p>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+                    </p>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+                <br>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <a href="#">Back To Top</a>
+    </footer>
+</body>
+</html>
